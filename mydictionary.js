@@ -36,7 +36,34 @@ document.querySelectorAll('.wordicon').forEach(wordicon => {
 
 const totalButton = document.getElementsByClassName("total")[0];
 const bookButton = document.getElementsByClassName("book")[0];
+const totalc = document.getElementsByClassName("totalc")[0];
+const bookc = document.getElementsByClassName("bookc")[0];
 
+const boo = document.getElementsByClassName("bookc")[0];
+
+boo.querySelectorAll('.wordicon').forEach(wordicon => {
+    const uI = wordicon.querySelector('.union'); // union 이미지 선택
+
+    // 초기 이미지 설정
+    uI.src = "Union2.png";
+
+    uI.addEventListener('click', (event) => {
+        event.stopPropagation(); // 클릭 이벤트 전파 방지
+
+        // 클릭 시 union 이미지의 src 변경
+        if (uI.src.endsWith('Union1.png')) {
+            uI.src = 'Union2.png'; // Union2로 변경
+        } else {
+            uI.src = "Union1.png"; // Union1으로 변경
+        }
+    });
+});
+
+const vv = () => {
+            totalc.style.display = 'flex';
+            bookc.style.display = 'none';
+}
+vv();
 
 var isVerticalActive = true; // total이 블랙
 totalButton.onclick = () => {
@@ -44,6 +71,8 @@ totalButton.onclick = () => {
         totalButton.style.color = 'black';
         bookButton.style.color = '#BDBDBD';
         isVerticalActive = true;
+        totalc.style.display = 'flex';
+        bookc.style.display = 'none'
     }
 };
 bookButton.onclick = () => {
@@ -51,5 +80,7 @@ bookButton.onclick = () => {
         bookButton.style.color = 'black';
         totalButton.style.color = '#BDBDBD';
         isVerticalActive = false;
+        totalc.style.display = 'none';
+        bookc.style.display = 'flex';
     }
 };
