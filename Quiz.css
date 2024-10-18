@@ -22,7 +22,6 @@ body {
 }
 
 .quiz-box {
-    height: 350px;
     background-color: white;
     width: 350px;
     height: auto;
@@ -45,8 +44,8 @@ body {
 }
 
 .option {
-    height: 70px;
     padding: 10px;
+    height: 70px;
     background-color: white;
     border: 2px solid #dcdcdc;
     border-radius: 10px;
@@ -70,7 +69,7 @@ body {
     width: 0%;
     background-color: #ffd400;
     height: 100%;
-    transition: width 15s linear;
+    transition: width 30s linear;
 }
 .expand{
     width: 100%;
