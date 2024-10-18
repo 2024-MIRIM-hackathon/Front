@@ -19,3 +19,10 @@ const chooanswer = (ans) => {
         answer.style.backgroundColor = '#FFF828'
     }, 1000);
 };
+
+async function getQuiz() {
+    const response = await fetch("http://172.16.21.53:7099/quize");
+    console.log(response);
+  }
+
+  getQuiz();
