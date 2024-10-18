@@ -4,6 +4,16 @@ body{
     height: calc(100vh - 40px);
     padding: 20px 30px;
 }
+
+
+
+.totalc{
+    display: flex;
+}
+.bookc{
+    display: none ; 
+}
+
 .mydictionary{
     margin-top: 20px;
     margin-bottom: 0;
