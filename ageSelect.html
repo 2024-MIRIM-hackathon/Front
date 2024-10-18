@@ -64,18 +64,18 @@
             <div class="number-picker">
                 <div class="numbers"></div> <!-- 숫자를 JavaScript로 동적으로 채움 -->
             </div>
-            <span class="age">세</span>
+            <span class="age">대</span>
         </div>
     </div>
 
     <script>
         const numbersContainer = document.querySelector('.numbers');
-        let current = 16; // 초기 선택된 숫자
+        let current = 10; // 초기 선택된 숫자
         const totalNumbers = 100; // 1~100까지
 
         // 숫자 생성 및 초기화 함수
         function initializeNumbers() {
-            for (let i = 1; i <= totalNumbers; i++) {
+            for (let i = 0; i <= totalNumbers; i+=10) {
                 const numberDiv = document.createElement('div');
                 numberDiv.classList.add('number');
                 numberDiv.textContent = i;

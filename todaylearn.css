@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    width: calc(100% - 60px);
+    height: calc(100vh - 60px);
+    margin: 30px;
+}
+.today,
+.meanTitle{
+    font-size: 15px;
+    font-weight: 1000;
+    margin-left: 20px;
+}
+.sentence-container,
+.mean-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    overflow: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    scrollbar-width: none;
+    padding: 15px 5px;
+}
+.sentence,
+.mean{
+    width: 300px;
+    box-shadow: 0 2px 18.5px 0 rgba(181, 181, 181, 25%);
+    padding: 30px;
+    border-radius: 18px;
+    font-size: 13px;
+}
+.word{
+    font-size: 25px;
+    font-weight: bold;
+}
+.wordmean{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.ex{
+    font-size: 12px;
+    color: #616161;
+}
+.exmean{
+    font-size: 15px;
+    margin-top: 5px;
+}
