@@ -32,6 +32,9 @@ const renderCalendar = (month, year) => {
     for (let date = 1; date <= lastDate; date++) {
         const dateElement = document.createElement('div'); // 날짜 요소 생성
         dateElement.classList.add('date'); // 'date' 클래스 추가 (스타일 적용을 위함)
+        if(date == 8){
+            dateElement.classList.add('fail'); 
+        }
         dateElement.innerHTML = date; // 날짜를 요소 안에 추가
 
         // 오늘 날짜인 경우 강조 처리 ('today' 클래스 추가)
