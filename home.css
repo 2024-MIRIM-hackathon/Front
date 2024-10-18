@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    position: absolute; 
+    top: 20px;          
+    left: 20px;         
+    font-size: 24px;    
+    color: #222;        
+}
+
+
+.calendar-container {
+    width: 100%;
+    max-width: 360px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+}
+
+.calendar-header {
+    margin-bottom: 10px;
+}
+
+.calendar-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    color: #666;
+    font-weight: 500;
+}
+
+.day {
+    padding: 10px 0;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.date {
+    padding: 10px 0;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.date:hover {
+    background-color: #eaeaea;
+}
+
+.today {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.past-date {
+    color: #ccc;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+    .calendar-container {
+        padding: 15px;
+    }
+    .calendar-dates .date {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+}
