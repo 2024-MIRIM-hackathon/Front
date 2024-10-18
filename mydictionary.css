@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    width: calc(100% - 60px);
+    height: calc(100vh - 40px);
+    padding: 20px 30px;
+}
+.mydictionary{
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mydictionary>p{
+    margin-bottom: 0;
+}
+.mydictionary>div{
+    display: flex;
+    margin: 15px 0;
+    gap: 10px;
+}
+.total,
+.book{
+    border: none;
+    padding: 0;
+    background-color: white;
+    font-size: 13px;
+}
+.book{
+    color: #BDBDBD;
+}
+.unionword{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.union{
+    width: 13px;
+    height: 18px;
+    margin-right: 8px;
+}
+.dictionary-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    padding-bottom: 20px;
+}
+.word-container {
+    border-radius: 26px;
+    border: 1px #E8E8E8 solid;
+    padding: 15px 20px;
+    overflow: hidden;
+    transition: height 0.3s ease; /* 전환 시간을 짧게 설정 */
+    height: 27px; /* 기본 높이 설정 */
+}
+.wordicon{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #A8A8A8;
+    padding-bottom: 15px;
+}
+.word{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.meanexample{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 10px;
+}
+.icon{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 6px;
+}
+.mean,
+.example{
+    padding-bottom: 5px;
+    font-size: 17px;
+    margin: 0;
+}
+.meanInfo,
+.exampleInfo{
+    margin: 0;
+    font-size: 15px;
+}
+.empty{
+    height: 60px;
+}
